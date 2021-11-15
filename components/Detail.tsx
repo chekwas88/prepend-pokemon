@@ -86,13 +86,15 @@ export default function Detail({ data }: { data: IPokemonDetail }) {
                       {move}
                     </span>
                   ))}
-                  <button
-                    type="button"
-                    onClick={() => setShowMore(true)}
-                    className="p-1 mt-0 ml-2 w-24 bg-gradient-to-r text-sm capitalize bg-gray-300 text-gray-600 font-medium rounded"
-                  >
-                    show more
-                  </button>
+                  {data.moves.length > 10 ? (
+                    <button
+                      type="button"
+                      onClick={() => setShowMore(true)}
+                      className="p-1 mt-0 ml-2 w-24 bg-gradient-to-r text-sm capitalize bg-gray-300 text-gray-600 font-medium rounded"
+                    >
+                      show more
+                    </button>
+                  ) : null}
                 </div>
               ) : (
                 <div className="grid pb-4 mt-2 grid-cols-2 gap-x-2 gap-y-4 lg:grid-cols-3 xl:grid-cols-4">
