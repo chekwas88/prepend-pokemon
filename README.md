@@ -48,4 +48,10 @@ The pagination feature on the homepage makes use of `react-query`. This library 
 
 ### Detail Page
 
-The detail page uses `getServersideProps` from nextjs, which pre-renders a page at every request. This is used because a pokemon attribute being displayed might change.
+The detail page uses `getServerSideProps` from nextjs, which pre-renders a page at every request. This is used because a pokemon attribute being displayed might change.
+
+## Deployment
+
+This project is deployed on [vercel](https://vercel.com/).
+
+View the Live app [here](https://prepend-pokemon.vercel.app/)
