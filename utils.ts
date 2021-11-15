@@ -1,4 +1,4 @@
-import { Pokemon, IHome } from "./types";
+import { Pokemon, IHome, IPokemonDetail } from "./types";
 
 export const fetchPokemons = async (
   limit: number = 16,
@@ -39,4 +39,34 @@ export const fetchPokemons = async (
 };
 export const classNames = (...classes: string[]) => {
   return classes.filter(Boolean).join(" ");
+};
+
+export const fetchAPokemon = async (
+  param: number | string
+): Promise<IPokemonDetail> => {
+  try {
+    let res = await fetch(`https://pokeapi.co/api/v2/pokemon/${param}`);
+    let pok = await res.json();
+    if (!pok) {
+      throw new Error(`pokemon with id or name ${param} not found`);
+    }
+    let data: IPokemonDetail = {
+      moves: pok.moves.map(({ move }) => move.name),
+      stats: pok.stats.map(({ stat, base_stat }) => ({
+        name: stat.name,
+        stat: base_stat,
+      })),
+      types: pok.types.map(({ type }) => type.name),
+      weight: pok.weight,
+      name: pok.name,
+      species: pok.species.name,
+      id: pok.id,
+      image: pok.sprites.other.home.front_default,
+    };
+
+    return data;
+  } catch (error) {
+    console.log(error);
+    return error;
+  }
 };
