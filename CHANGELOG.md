@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/chekwas88/prepend-pokemon/compare/v1.1.0...v1.2.0) (2022-05-13)
+
+
+### Features
+
+* test for feat ([02743e6](https://github.com/chekwas88/prepend-pokemon/commit/02743e6835a3d2f3667556559a1ca148b712696b))
+
+
+
 # [1.1.0](https://github.com/chekwas88/prepend-pokemon/compare/v1.0.0...v1.1.0) (2022-05-12)
 
 
