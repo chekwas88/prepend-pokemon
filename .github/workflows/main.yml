@@ -26,6 +26,7 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v3
         with:
+          token: ${{ secrets.BUMP_GITHUB_TOKEN }}
           fetch-depth: 0
 
       # Runs a single command using the runners shell
@@ -33,16 +34,17 @@ jobs:
         id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.BUMP_GITHUB_TOKEN }}
           git-message: 'chore(release): {version}'
           preset: 'angular'
           tag-prefix: 'v'
+          output-file: 'CHANGELOG.md'
       
       - name: Create Release
         uses: actions/create-release@v1
         if: ${{ steps.changelog.outputs.skipped == 'false' }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.BUMP_GITHUB_TOKEN }}
         with:
           tag_name: ${{ steps.changelog.outputs.tag }}
           release_name: ${{ steps.changelog.outputs.tag }}
