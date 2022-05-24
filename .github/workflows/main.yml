@@ -38,6 +38,7 @@ jobs:
           git-message: 'chore(release): {version}'
           preset: 'angular'
           tag-prefix: 'v'
+          skip-git-pull: 'true'
           output-file: 'CHANGELOG.md'
       
       - name: Create Release
