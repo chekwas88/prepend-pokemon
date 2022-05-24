@@ -37,7 +37,6 @@ jobs:
           git-message: 'chore(release): {version}'
           preset: 'angular'
           tag-prefix: 'v'
-          output-file: 'CHANGELOG.md'
       
       - name: Create Release
         uses: actions/create-release@v1
