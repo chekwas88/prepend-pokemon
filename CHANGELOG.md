@@ -1,3 +1,15 @@
+## [1.3.3](https://github.com/chekwas88/prepend-pokemon/compare/v1.3.0...v1.3.3) (2022-05-24)
+
+
+### Bug Fixes
+
+* add id ([2020108](https://github.com/chekwas88/prepend-pokemon/commit/2020108ba75d919cd8eb4d51c970f5e4e38a0a4a))
+* add PAT back ([d3faf8d](https://github.com/chekwas88/prepend-pokemon/commit/d3faf8deb6893f68ed39926a6debab9564ae17e8))
+* remove id ([b33399b](https://github.com/chekwas88/prepend-pokemon/commit/b33399b401e1b53e4f14e526001fd4e5c7468627))
+* remove PAT ([0159ea1](https://github.com/chekwas88/prepend-pokemon/commit/0159ea1d81d00e722278286404f92cea556f21ab))
+
+
+
 # [1.3.0](https://github.com/chekwas88/prepend-pokemon/compare/v1.1.0...v1.3.0) (2022-05-24)
 
 
