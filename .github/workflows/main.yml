@@ -30,7 +30,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Bump version
-        id: changelog
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
