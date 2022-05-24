@@ -1,3 +1,12 @@
+## [1.3.1](https://github.com/chekwas88/prepend-pokemon/compare/v1.3.0...v1.3.1) (2022-05-24)
+
+
+### Bug Fixes
+
+* remove PAT ([0159ea1](https://github.com/chekwas88/prepend-pokemon/commit/0159ea1d81d00e722278286404f92cea556f21ab))
+
+
+
 # [1.3.0](https://github.com/chekwas88/prepend-pokemon/compare/v1.1.0...v1.3.0) (2022-05-24)
 
 
