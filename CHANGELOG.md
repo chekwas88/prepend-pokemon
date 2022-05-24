@@ -1,3 +1,12 @@
+## [1.3.4](https://github.com/chekwas88/prepend-pokemon/compare/v1.3.3...v1.3.4) (2022-05-24)
+
+
+### Bug Fixes
+
+* skip pull ([4230491](https://github.com/chekwas88/prepend-pokemon/commit/4230491e34573bbb446e7a3ed862065ca05cb87a))
+
+
+
 ## [1.3.3](https://github.com/chekwas88/prepend-pokemon/compare/v1.3.0...v1.3.3) (2022-05-24)
 
 
